@@ -9,7 +9,8 @@ on:
 jobs:
   if_merged:
     permissions: 
-      actions: write
+      pages: write
+      id-token: write
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:

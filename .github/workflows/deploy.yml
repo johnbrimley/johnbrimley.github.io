@@ -8,6 +8,8 @@ on:
       - main
 jobs:
   if_merged:
+    permissions: 
+      actions: write
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
